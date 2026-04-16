@@ -15,4 +15,4 @@ Restore mybatis sql log to original whole executable sql.
 
 Like my work?
 
-[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/huangxingguang)
+[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/yanhong)
