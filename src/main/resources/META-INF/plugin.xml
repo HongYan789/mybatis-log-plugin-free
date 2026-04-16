@@ -2,26 +2,28 @@
 	<id>com.starxg.mybatis-log-plugin-free</id>
 	<name>MyBatis Log Free</name>
 
-	<vendor email="591269@gmail.com" url="http://github.com/starxg">starxg</vendor>
+	<vendor email="464456947@qq.com" url="http://github.com/HongYan789">HongYan789</vendor>
 
 	<description><![CDATA[
 	Restore mybatis sql log to original whole executable sql.
 	<br/>
-	<img width="350" height="210" src="https://blog.starxg.com/img/2021/10/1-2-2.png"  alt=""/>
+	<img width="350" height="210" src="https://www.996dog.com/img/2021/10/1-2-2.png"  alt=""/>
 	<br/>
 	<b>usage:</>
 	<ol>
 		<li>Click Tool -> MyBatis Log Free</li>
 		<li>Click MyBatis Log Free in the console</li>
 	</ol>
-    <a href="http://github.com/starxg/mybatis-log-plugin-free">github</a> | <a href="https://github.com/starxg/mybatis-log-plugin-free/issues">issues</a> | <a href="http://ko-fi.com/huangxingguang">donate</a>
+    <a href="http://github.com/HongYan789/mybatis-log-plugin-free">github</a> | <a href="https://github.com/HongYan789/mybatis-log-plugin-free/issues">issues</a> | <a href="http://ko-fi.com/yanhong">donate</a>
     ]]></description>
 
 	<depends>com.intellij.modules.platform</depends>
+	<depends>com.intellij.modules.java</depends>
 
 	<extensions defaultExtensionNs="com.intellij">
 		<!-- Add your extensions here -->
 		<consoleFilterProvider implementation="com.starxg.mybatislog.MyBatisLogConsoleFilterProvider"/>
+		<codeInsight.lineMarkerProvider language="JAVA" implementationClass="com.starxg.mybatislog.jpa.JpaQueryLineMarkerProvider"/>
 		<executor implementation="com.starxg.mybatislog.gui.MyBatisLogExecutor"
 				  id="MyBatisLogFreeExecutor"/>
 	</extensions>
